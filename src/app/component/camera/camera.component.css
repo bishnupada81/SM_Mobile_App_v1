@@ -1,0 +1,35 @@
+.item img {
+  width: 300px;
+}
+.success-message{
+  background-color:skyblue;
+  border: 1px solid #d6e9c6;
+  color: #3c3c3c;
+  padding: 10px;
+  margin-top: 10px;
+}
+.chooseFileClass{
+  border: 400px solid #141212;
+   width: 300px;
+   height: 300px;
+   margin-top: 150px;
+    align-items: center;
+    display:inline-block;
+}
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 50px;
+    cursor: pointer;
+}
+
+.camera-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}

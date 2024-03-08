@@ -9,6 +9,7 @@ import { AccountComponent } from './component/account/account.component';
 import { SetPinComponent } from './component/set-pin/set-pin.component';
 import { PreConfigurationComponent } from './component/pre-configuration/pre-configuration.component';
 import { CameraComponent } from './component/camera/camera.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CameraComponent } from './component/camera/camera.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

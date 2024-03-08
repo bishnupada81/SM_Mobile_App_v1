@@ -1,1 +1,27 @@
-<p>camera works!</p>
+
+<div class="p-3 border chooseFileClass" *ngIf="!imageUrl">
+
+  <div class="col text-center p-2 mb-3 main-div" style="margin-top: 20px;">
+    <span class="fs-4" >Scan The QR Code</span>
+  </div>
+  <div class="img-cap" style="margin-top: 50px;">
+    <!-- <span>
+      <input type="file" (change)="onFileSelected($event)">
+    </span> -->
+    <div class="image-upload camera-box">
+      <label for="file-input">
+        <img src="../../../assets/Vector.svg" alt="crop-cap">
+      </label>
+
+      <input id="file-input" type="file" (change)="onFileSelected($event)">
+    </div>
+  </div>
+
+</div>
+
+<div class="item">
+  <img *ngIf="imageUrl" [src]="imageUrl" alt="Selected Image">
+</div>
+<div *ngIf="imageUrl">
+ <button (click)="verifyUser()"class="btn btn-primary text-center" [disabled]="showSuccessMessage">Scan Now</button>
+</div>
