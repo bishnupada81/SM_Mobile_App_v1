@@ -33,7 +33,7 @@ export class CameraComponent implements OnInit {
 
   public verifyUser() : void {
     Swal.fire({
-      title: "withdraw Successful! transaction Id:123456",
+      title: "User Authentication Successful! transaction Under processing",
       confirmButtonText: "Okay",
     }).then((result) => {
 

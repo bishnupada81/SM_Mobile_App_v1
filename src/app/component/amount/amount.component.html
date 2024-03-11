@@ -9,5 +9,12 @@
     <input type="text" class="form-control" id="enterYourAmount" formControlName="amount">
     <span style="color: red;" *ngIf="amount && amount.invalid && amount.touched">This input is not valid</span>
   </div>
+  <div class="mb-3">
+    <label>Select an Account: </label>
+    <select #teams (change)="onSelected()" id="account" formControlName="account"  >
+      <option [defaultSelected]=true [value]="default" >{{default}}</option>
+      <option *ngFor="let c of accounts" [value]="c" >{{ c }}</option>
+    </select>
+  </div>
   <button type="submit" class="btn btn-primary text-center" [disabled]="amountVerification.invalid">Submit</button>
 </form>
