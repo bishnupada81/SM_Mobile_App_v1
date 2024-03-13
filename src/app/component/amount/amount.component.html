@@ -10,11 +10,11 @@
     <span style="color: red;" *ngIf="amount && amount.invalid && amount.touched">This input is not valid</span>
   </div>
   <div class="mb-3">
-    <label>Select an Account: </label>
-    <select #teams (change)="onSelected()" id="account" formControlName="account"  >
+    <label>Select an Account </label>
+    <select class="form-select" aria-label="select example" #teams (change)="onSelected()" id="account" formControlName="account"  >
       <option [defaultSelected]=true [value]="default" >{{default}}</option>
       <option *ngFor="let c of accounts" [value]="c" >{{ c }}</option>
     </select>
   </div>
-  <button type="submit" class="btn btn-primary text-center" [disabled]="amountVerification.invalid">Submit</button>
+  <button type="submit" class="btn btn-primary text-center">Submit</button>
 </form>

@@ -45,8 +45,12 @@ export class AmountComponent implements OnInit {
     this._router.navigateByUrl('/pre-configuration');
   }
 
-  accounts = [917010013737890, 917010013737892, 917010013737893];
-  default = 917010013737800
+  accounts = [
+    "917010013737890" + "-saving Account",
+    "917010013737892" + "-current Account",
+    "917010013737893" + "-saving Account"
+  ];
+  default = 917010013737800+"-saving Account"
 
   selectedAccount= 23 ;
   onSelected(): void{
